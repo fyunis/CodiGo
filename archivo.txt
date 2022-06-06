@@ -1,1 +1,9 @@
-HOLA MI NOMBRE ES FED YUNIS
+HOLA
+
+Nombre: Fed Yunis Zapata
+Puesto: CSA
+Curso: FullStack Developer
+Cel: 00000000000
+DNI: 898374682
+Correo: ajjassa@gmail.com
+
