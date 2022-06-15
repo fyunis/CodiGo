@@ -1,14 +1,90 @@
 <html>
+    <!-- Aquí empieza HEAD; provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos. -->
     <head>
         <title>
             HTML
         </title>
     </head>
-
+    <!-- Aquí empieza BODY; representa el contenido de un documento HTML. Solo puede haber un elemento <body> en un documento. -->
     <body>
+        <!-- La etiqueta H1 los encabezados - Heading levels del 1 (mayor nivel) hasta el 6 (menor nivel) -->
         <h1>
             Intro a HTML
         </h1>
+        <!-- Elemento de imagen HTML (img) representa una imagen en el documento.
+        Los navegadores no siempre muestran la imagen a la que el elemento hace referencia. Es el caso de los navegadores no gráficos (incluyendo aquellos usados por personas con problemas de visión), 
+        sí el usuario elige no mostrar la imagen, o sí el navegador es incapaz de mostrarla porque no es válida o soportada. En ese caso, el navegador la reemplazará con el texto definido en el atributo alt. 
+        atributos: src = source / alt = alternate / width = ancho (puede ser pixeles, % o er,rem).. -->
+        <img src="https://www.cursosgis.com/wp-content/uploads/recursos-web-para-programar-en-HTML5.png" alt="LOGO DE HMTL5" width="250">
+        <h2>
+            ¿Qué es?
+        </h2>
+        <!-- El elemento p (párrafo) es el apropiado para distribuir el texto en párrafos -->
+        <p>
+            HTML es un lenguaje de marcado que nos permite indicar la estructura de nuestro documento mediante etiquetas.
+            <br> <!-- El elemento HTML line break <br> produce un salto de línea en el texto, donde la división de las líneas es significante -->
+            Este lenguaje nos ofrece una gran adaptabilidad, una estructuración lógica y es fácil de interpretar tanto por humanos como por máquinas.
+        </p>
+
+        <h2>
+            Etiquetas que conocemos::
+        </h2>
+        <p>
+            <!-- El elemento ol permite definir listas o viñetas ordenadas (“Ordered List”), bien con numeración o alfabéticamente -->
+            <ol>
+                <!-- El elemento li (item list) o elemento de lista declara cada uno de los elementos de una lista -->
+                <li>HTML</li>
+                <li>BODY</li>
+                <li>HEAD</li>
+                <li>TITLE</li>
+                <li>P</li>
+                <li>BR</li>
+                <li>H1..</li>
+                <li>OL</li>
+                <li>LI</li>
+                <li>IMG
+                    <ol>
+                        <li>src</li>
+                        <li>alt</li>
+                        <li>width</li>
+                    </ol>
+                </li>
+            </ol>
+        </p>
+        <br>
+        <p>
+            <!-- ul de "unordered list" -lista no ordenada . crea una lista no ordenada -->
+            <ul>
+                <li>HTML</li>
+                <li>BODY</li>
+                <li>HEAD</li>
+                <li>TITLE</li>
+                <li>P</li>
+                <li>BR</li>
+                <li>H1..</li>
+                <li>OL</li>
+                <li>LI</li>
+                <li>IMG
+                    <ul>
+                        <li>src</li>
+                        <li>alt</li>
+                        <li>width</li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+        <!-- div de "division" -división . Sirve para crear secciones o agrupar contenidos
+        atributo style=text-align permite mover el DIV al centro o derecha -->
+        <div style="text-align: right;">
+            <!-- El elemento HTML <iframe> (de inline frame) representa un contexto de navegación anidado, 
+                el cual permite incrustrar otra página HTML en la página actual -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WSFT4OQF_mA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div style="text-align: center;">
+            <!-- blockquote -cita en bloque . Crea citas en bloque, marca las citas a otros autores o documentos -->
+            <blockquote class="twitter-tweet"><p lang="es" dir="ltr">&quot;Iniciativas como las viviendas con servicios nos ayudan a soñar en un futuro de libertad, dignidad, cuidados y convivencia para todas las personas&quot; <br>Por Fernando Fantova <a href="https://t.co/XQMAqZV8g7">https://t.co/XQMAqZV8g7</a></p>&mdash; Público (@publico_es) <a href="https://twitter.com/publico_es/status/1537103303712165888?ref_src=twsrc%5Etfw">June 15, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
     </body>
 
 
