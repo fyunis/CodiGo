@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Week 1 - day 3</title>
+    </head>
+    <body>
+        <!-- La etiqueta que sirve para poder crear un link en nuestra página es la <a></a> -->
+        <img src="./images/una-taza-de-javascript.png" width="400" alt="IMG Taza de JS">
+
+        <!-- Si queremos que la página se abra en nueva ventana, debemos usar el atributo
+        target="_blank" -->
+        <!-- La etiqueta <a></a> puede contener cualquier otra etiqueta -->
+        <a href="https://www.javascript.com/" target="_blank"> Link to JS </a>
+        <a href="https://www.javascript.com/" target="_blank"><img src="./images/js-logo.png" width="400" alt="Logo de JS"></a>
+        <a href="https://sunwarrior.com/" target="_blank"><img src="./images/logo_sunwarrior.png" width="200"  alt="Logo de Sunwarrior"></a>
+        <a href="https://sunwarrior.com/" target="_blank"><h1>Link to Sunwarrior</h1></a>
+
+        <div>
+            <!-- La etiqueta <video></video> permite mostrar un video
+            El atributo controls, permite reproducir el video 
+            El atributo mute, permite que el video no tenga sonido
+            El atributo loop permite reproducir el video sin para (inicia automáticamente una vez culminado) -->
+            <video controls autoplay muted width="400" src="./videos/video.mp4"></video>
+        </div>
+        <br>
+        <div>
+            <!-- La etiqueta button a diferencia de un hiperlink (<a>) no redirecciona hacia otra página, en sí
+                el propósito del botón es ejecutar una acción; ejemplo: enviar datos, validar formularios, abrir modales (pop-ups), etc. 
+            Un botón trabaja sobre un evento, click en el evento para poder usarlo; en HTML debemos llamarlo
+            onclick=""
+            !! Nota: Onclick es todo en minúsculas y junto
+            -->
+            <!-- En el siguient ejemplo estamos diciéndole al botón que al darle click vamos a imprimir un mensaje
+             en la consola del navegador -->
+            <button onclick="console.log('Hello from button')">Print</button>
+        </div>
+  
+    </body>
+</html>
