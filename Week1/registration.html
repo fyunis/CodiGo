@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Register fast!!</h1>
+    <hr>
+    <!-- El elemento FORM representa una sección de un documento que contiene controles interactivos 
+        que permiten a un usuario enviar información a un servidor web 
+    atributos:
+    *   action: La URI de un programa que procesa la información enviada por medio del formulario. 
+    *   method: El método HTTP que el navegador usa para enviar el formulario. Valores posibles son: POST y GET 
+    -->
+    <form action="./tables.html" method="GET"></form>
+    <table>
+        <tr>
+            <td>Name</td>
+            <!-- El elemento INPUT se usa para crear controles interactivos para formularios basados 
+                en la web con el fin de recibir datos del usuario 
+                Es uno de los más potentes y complejos en todo HTML debido a la gran cantidad de 
+                combinaciones de tipos y atributos de entrada
+            atributos:
+            *   value: El valor inicial del control. Este atributo es opcional, excepto cuando el atributo type es radio o checkbox.
+            *   required: Especifica que el usuario debe llenar el control antes de enviarlo al formulario. 
+            *   No puede ser usado cuando el atributo type es hidden, image, o de tipo botón 
+         -->
+            <td><input type="text" required></td>
+        </tr>
+        <tr>
+            <td>Surname</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" required></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" required></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <!-- El elemento select SELECT representa un control que muestra un menú de opciones. 
+                    Las opciones contenidas en el menú son representadas por elementos <option>, 
+                    los cuales pueden ser agrupados por elementos <optgroup> -->
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Marital Status</td>
+            <td><input type="radio" name="marital_status">Single
+                <input type="radio" name="marital_status">Married
+                <input type="radio" name="marital_status">Widow
+            </td>
+        </tr>
+        <tr>
+            <td>I have read the terms and I agree</td>
+            <td><input type="checkbox">I Agree</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><input type="submit" value="Register"></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

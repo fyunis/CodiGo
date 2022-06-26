@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tables</title>
+</head>
+<body>
+    <h1>My Tables</h1>
+    <!-- El elemento <hr> representa un cambio de tema entre párrafos 
+        (por ejemplo, un cambio de escena en una historia, un cambio de tema en una sección). 
+        En versiones previas de HTML representaba una línea horizontal -->
+    <hr>
+    <!-- El Elemento <table> representa datos en dos o mas dimensiones -->
+    <!-- El elemento table row <tr> define una fila de celdas en una tabla. Estas 
+        pueden ser una mezcla de elementos <td> y <th> -->
+    <!-- El elemento Celda de tabla - Table data <td> define la celda de una tabla que contiene datos. Esta 
+        participa en el modelo de tablas -->
+    <!-- El elemento table header <th> define una celda como encabezado de un grupo de celdas en una tabla. 
+         La naturaleza exacta de este grupo está definida por los atributos scope y headers. -->
+    <!-- * Atributos del TAG TABLE:
+         *   border; permite colocar bordes
+         *   cellpadding; permite definir espacio interno entre el contenido de la celda y sus bordes
+         *   cellspacing; permite definir espacio entre celdas, se aplica tanto a nivel horizontal como vertical.
+         * -->
+    <table border="1" cellpadding="5" cellspacing="2">
+        <!-- Primera Fila -->
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <!-- Segunda Fila -->
+        <tr>
+            <td>000</td>
+            <td>Fed Yunis</td>
+            <!-- * El atributo rowspan permite combinar celdas. Este atributo contiene un valor entero no negativo que 
+                 * indica el número de filas que se extiende la celda. Su valor por defecto es 1 -->
+            <td rowspan="2">38</td>
+        </tr>
+        <!-- Tercera Fila -->
+        <tr>
+            <td>001</td>
+            <td>Chris Green</td>
+        </tr>
+        <!-- Cuarta fila -->
+        <tr>
+            <td>002</td>
+            <!-- * El atributo colspan permite combinar celdas. Este atributo contiene un valor entero no negativo que 
+                 * indica el número de columnas se extiende la celda. Su valor por defecto es 1 -->
+            <td colspan="2">Doe Jones</td>
+        </tr>
+    </table>
+</body>
+</html>
