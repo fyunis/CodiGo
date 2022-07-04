@@ -1,0 +1,31 @@
+.bolded {
+    font-weight: bold;
+}
+
+.verypoor {
+    color:crimson;
+}
+
+.insufficient {
+    color:indianred;
+}
+
+.enough {
+    color:yellow;
+}
+
+.good {
+    color:lightgreen;
+}
+
+.remarkable {
+    color:green;
+}
+
+.outstanding {
+    color:greenyellow
+}
+
+.notvalid {
+    color:red;
+}

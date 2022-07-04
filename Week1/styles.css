@@ -1,0 +1,39 @@
+/* Los selectores definen sobre qué 
+elementos se aplicará un conjunto de 
+reglas CSS
+*/
+/* El selector de tipo CSS selecciona elementos por nombre de nodo. 
+En otras palabras, selecciona todos los elementos del tipo dado 
+dentro de un documento.
+
+Sintaxis: element { style properties }
+n a simple and short way, one should keep in mind below 2 things:
+
+Inline CSS has a higher priority than embedded and external CSS.
+So final Order is: Value defined as:
+Important > Inline >id nesting > id > class nesting > class > tag nesting > tag
+*/
+h1 {
+    /*En CSS podemos declarar reglas de estilos como !important para que tomen precedencia sobre otras reglas de estilos 
+    que se puedan encontrar en una página web.
+    Para utilizar !important en una regla de estilo, siempre se coloca en la parte del valor del atributo, antes del punto y coma ";"
+    */
+    /* color: grey !important;  */
+    color: grey; 
+    text-decoration: underline;
+}
+
+h2 {
+    color: blue;
+}
+
+/* el # es el selector del ID */
+#header1 {
+    color: red;
+}
+
+/* el . es el selector de CLASS */
+.redparagraph {
+    color: red;
+    font-weight: 600;
+}

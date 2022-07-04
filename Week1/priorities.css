@@ -1,0 +1,56 @@
+table {
+    /*La propiedad border-collapse se utiliza para fusionar los bordes. 
+    Ésto tiene una gran influencia sobre la presentación y el estilo de las celdas de tabla. 
+    La representación de los bordes de tabla es dividida en dos categorías:
+    collapsed 
+    separated
+    Esta propiedad especifica que modo de presentación de borde hay que usar.
+    */
+    border-collapse: collapse;
+    /* La propiedad de border-spacing especifica la distancia entre los bordes de celdas adyacentes (sólo para el modelo de separación de borde).
+       Es el equivalente al atributo cellspacing en HTML. 
+       /* !Ésta propiedad sólo se aplica cuando border-collapse es especificado en separate.
+       border-spacing: <length> | <length> <length> | inherit
+       <length> : un largo a utilizar para el espaciado horizontal y vertical.
+       <length> <length> : el primero da el espaciado horizontal (espacio entre celdas de una fila) y el segundo el espaciado vertical (espacio entre celdas de una columna).
+    */
+    border-spacing: 0px;
+    text-align: center;
+}
+
+/*La pseudo-clase :nth-child(), coincide con uno o más elementos en función de su posición en el grupo. 
+  Se especifica con un único argumento, que representa el patrón para los elementos coincidentes
+  odd = Representa elementos cuya posición numérica en una serie de hermanos es impar: 1, 3, 5, etc
+  even = Representa elementos cuya posición numérica en una serie de hermanos es par: 2, 4, 6, etc
+  así hay más variantes para seletores
+  */
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+th {
+    background-color: orange;
+    font-size: large;
+    font-family: trebuchet MS;
+}
+
+th,td {
+    /*La propiedad CSS padding establece el espacio de relleno requerido por todos los lados de un elemento. 
+      El área de padding es el espacio entre el contenido del elemento y su borde (border). No se permiten valores negativos
+    */
+    padding: 10px;
+}
+
+td {
+    font-size: small;
+    font-family: trebuchet MS;
+}
+
+.property { 
+    color: blue;
+    font-weight:bold;
+}
+
+i {
+    color: red;
+}

@@ -1,0 +1,15 @@
+.cold {
+    color: blue;
+}
+.mild {
+    color: skyblue;
+}
+.warm {
+    color: brown;
+}
+.tropical {
+    color: green;
+}
+.NaN {
+    color: red;
+}

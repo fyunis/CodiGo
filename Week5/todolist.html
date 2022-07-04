@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List</title>
+    <link rel="stylesheet" href="./css/todolist.css">
+</head>
+<body>
+    <div id="container">
+        <h1>To-do list</h1>
+        <div id="list">
+            <!-- Task 1 -->
+            <!--podemos asignar 02 clases a una sola etiqueta, con tan solo agregarla separadas por un espacio -->
+            <!-- <p class="task">
+                <input type="checkbox">
+                <span>Task 1</span>
+                <a>❌</a>
+            </p> -->
+            
+            <!-- Task 2 -->
+            <!-- <p class="task delete">
+                <input type="checkbox">
+                <span>Task 2</span>
+                <a>❌</a>
+            </p> -->
+
+            <!-- Add new task -->
+            <p class="form">
+                <input type="text" id="input_newtask" placeholder="new task...">
+                <input type="button" value="New Task" onclick="addTask()">
+            </p>
+        </div>
+        <h1>Settings</h1>
+        <div id="settings">
+            <p>
+              &nbsp;<input type="checkbox" id="chx_task_done" />&nbsp;Show or hide completed tasks
+            </p>
+            <p>
+              &nbsp;<input type="checkbox" id="chx_task_delete" />&nbsp;Show or hide deleted tasks
+            </p>
+            <p>
+              &nbsp;<input type="checkbox" id="chx_task_todo" />&nbsp;Show or hide pending tasks
+            </p>
+          </div>
+    </div>
+    
+</body>
+<script src="./js/todolist.js"></script>
+<script src="./js/task.js"></script>
+</html>

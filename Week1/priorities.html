@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Prioritiesh1</title>
+    <link rel="stylesheet" href="./priorities.css">
+</head>
+<body>  
+    <h1>Style Priorities in CSS</h1>
+    <hr>
+
+    <!-- Start table -->
+    <table>
+        <!-- First row -->
+        <tr>
+            <th>#</th>
+            <th>Source</th>
+            <th>Selector / Example</th>
+        </tr>
+        <!-- Second row -->
+        <tr>
+            <td>1</td>
+            <td>!important</td>
+            <td>property: xxx <span id="important">!important;</span></td>
+        </tr>
+        <!-- Third row -->
+        <tr>
+            <td>2</td>
+            <td>in-line css</td>
+            <td>style=<span class="property">"property:xxx"</span></td>
+        </tr>
+        <!-- Fourth row -->
+        <tr>
+            <td>3</td>
+            <td>nested id</td>
+            <td>element #id <span class="property">{property:xxx;}</span></td>
+        </tr>
+        <!-- Fifth row -->
+        <tr>
+            <td>4</td>
+            <td>id</td>
+            <td>#id <span class="property">{property:xxx;}</span></td>
+        </tr>
+        <!-- Sixth row -->
+        <tr>
+            <td>5</td>
+            <td>nested class</td>
+            <td>element class <span class="property">{property:xxx;}</span></td>
+        </tr>
+        <!-- Seventh row -->
+        <tr>
+            <td>6</td>
+            <td>class</td>
+            <td>class <span class="property">{property:xxx;}</span></td>
+        </tr>
+        <!-- Eighth row -->
+        <tr>
+            <td>7</td>
+            <td>tag</td>
+            <td>tag <span class="property">{property:xxx;}</span></td>
+        </tr>
+    </table>
+</body>
+</html>

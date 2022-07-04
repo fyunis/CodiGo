@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Condicionales</title>
+    <!-- La etiqueta Style permite agregar estilos dentro del mismo documento HTML.
+    Buenas prácticas:
+    * generar un documento .css por separado para los estilos y enlazarlo al HTML
+    * la etiqueta style, siempre deben ir dentro de la etiqueta head.
+    -->
+    <style type="text/css">
+        .red {
+            color: red;
+        }
+        .blue {
+            color: blue;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Tuesday June 21</h1>
+    <h2>Conditionals + document.write()</h2>
+    <hr>
+</body>
+<!-- La etiqueta script te permite escribir código javascript dentro del HTML 
+Buenas prácticas:
+ * generar un documento .js por separado y enlazarlo al HTML
+ * la etiqueta script, siempre debe ir al final, después del body, por temas de orden de ejecución y desempeño
+-->
+<script type="text/javascript">
+    document.write("<h3>Grades</h3>"); //La función document.write te permite escribir dentro del HTML
+
+    let grade = 16; //Nota del alumno
+    //document.write("The grade entered is:" + " " + grade); //Utilizamos el operador + para concatear strings
+    grade = Number(prompt("Enter grade:"));
+    //IF: si en condicional
+    //ELSdesaprobarE: sino
+    //Ejecuta una sentencia si una condición específicada es evaluada como verdadera. Si la condición es evaluada como falsa,
+    //otra sentencia puede ser ejecutada.
+    //if (condition) {
+        //instructions if the condition is met
+    //} else {
+        //instructions if the condition is not met
+    //}
+    
+    //la función isNAN permite evaluar si un valor NO es númerico
+    if (isNaN(grade)) {
+        alert("Solo es permitido valores númericos");
+        grade = Number(prompt("Enter grade:"));
+    }
+
+    //Example
+    if (grade < 11) {
+        //document.write("<p class='red'>" + "The grade entered is:" + " " + grade + "</p>");
+        document.write("<p class='red'>Failed</p>"); //se hace referencia a la clase de estilos creada, en este caso red, para darle color al string
+    } else {
+        //document.write("<p class='blue'>" + "The grade entered is:" + " " + grade + "</p>");
+        document.write("<p class='blue'>Passed</p>"); //se hace referencia a la clase de estilos creada, en este caso blue, para darle color al string
+    }
+</script>
+</html>

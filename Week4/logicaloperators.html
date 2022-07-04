@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Operators</title>
+</head>
+<body>
+    <h1>Logical Operators</h1>
+    <hr>
+</body>
+<script type="text/javascript">
+    //Tipos de operadores lógicos:
+    document.body.style.backgroundColor = "red"; // con esta línea del objeto document, permite ponerle color a todo el fondo del body.
+    //document.getElementsByTagName("h1")[0].innerText = "Logical Operators - desde JS"; //con esta línea del objeto document, permite seleccionar 
+                                                                                       //una sección del HTML y modificarla. El [0] indica el orden del elemento.
+    //Podemos capturar el valor de un tag en una variable, de la siguiente manera:
+    let h1text = document.getElementsByTagName("h1")[0].innerText;
+    document.write("The captured text is:" + " " + h1text);
+    document.write("<hr>");
+    //Los tipos de operadores lógicos son:
+    //  && = AND
+    //  || = OR
+    //  !  = NOT
+   
+    //Operador && (AND):
+    //alert(true && true); // dará como resultado TRUE
+    //alert(true && false); // dará como resultado FALSE
+    //alert(false && true); // dará como resultado FALSE
+    //alert(false && false); // dará como resultado FALSE
+    //Conclusión: Si uno de los valores es false, el resultado siempre será false.
+
+    let hour = 20;
+    //Evaluación:
+    //hora es menor a 18 (true) y mayor a 6 (true) : true && true = true
+    if (hour < 18 && hour > 6) {
+        document.write("<p>it is day</p>");
+    }else {
+        document.write("<p>it is night</p>");
+    }
+
+    //Operador || (OR):
+    //alert(true || true); // dará como resultado TRUE
+    //alert(true || false); // dará como resultado TRUE
+    //alert(false || true); // dará como resultado TRUE
+    //alert(false || false); // dará como resultado FALSE
+    //Conclusión: Si uno de los valores es true, el resultado siempre será true.
+
+    let name = "Magaly";
+    let age = 35;
+    let status = "married";
+    let numchildren = 2;
+
+    if (age > 30 || status == "married" || numchildren > 0) {
+        document.write("<p>good morning Mrs." + " " + name + "</p>");
+    } else {
+        document.write("<p>good morning Ms." + " " + name + "</p>");
+    }
+
+    //Un solo símbolo = se utiliza para asginar valor a una variable
+    //Doble símbolo = se utiliza para comparar 02 valores (normalmente se usa en una condición)
+    //Triple símbolo = se utiliza para comparar 02 valores, adicionalmente por el tipo de dato
+
+    document.write("<hr>");
+
+    //Operador Ternario (?):
+    //El operador condicional (ternario) es el único operador en JavaScript que tiene tres operandos. 
+    //Este operador se usa con frecuencia como atajo para la instrucción if.
+    //SINTAXIS: condición ? expr1 : expr2 
+    document.write("<h1>Sky</h1>");
+    let hr = 5;
+    let sky;
+
+    // if (hr < 18 && hr > 6) {
+    //     sky = "day";
+    // }else {
+    //     sky = "night";
+    // }
+    //la lógica del if puede ser reemplazada por el operador ternario, permitiendo así reducir línas de código.
+    //sería de la siguiente manera, con base en la sintaxis indicada líneas arriba:
+    //sky = (hr < 18 && hr > 6) ? "day" : "night";
+
+    //otra forma de realizar la lógica con el operador ternario, sería:
+    (hr < 18 && hr > 6) ? sky = "day" : sky = "night";
+    document.write("<p>It's" + " " + hr + " " + "hours" + " " + "and it's" + " " + sky + "</p>");
+    document.write("<hr>");
+
+</script>
+</html>
